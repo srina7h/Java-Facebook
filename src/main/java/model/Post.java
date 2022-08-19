@@ -1,9 +1,21 @@
-public class Post {
-    public Post() {
-    }
+package model;
 
+import java.util.Date;
+
+public class Post {
     private int id;
     private String post;
+
+    private Date date;
+
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
 
     public int getId() {
         return id;
