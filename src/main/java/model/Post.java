@@ -5,8 +5,13 @@ import java.util.Date;
 public class Post {
     private int id;
     private String post;
-
     private Date date;
+
+    public Post(int id, String post, Date date) {
+        this.id = id;
+        this.post = post;
+        this.date = date;
+    }
 
 
     public Date getDate() {
@@ -30,11 +35,6 @@ public class Post {
     }
 
     public void setPost(String post) {
-        this.post = post;
-    }
-
-    public Post(int id, String post) {
-        this.id = id;
         this.post = post;
     }
 }
